@@ -1,0 +1,92 @@
+.HomeBanner-container {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../../Assets/Home/banner.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.bannerWrapper {
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: #363839f3; */
+  background: linear-gradient(to bottom, #363839f7, #13171bf7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textmain {
+  background: linear-gradient(30deg, #ff7300, #ffde55);
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 8rem;
+  text-align: center;
+  /* font-family: "Fredericka the Great", serif; */
+  /* font-family: "Miltonian", serif; */
+}
+.textwrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------------------------------------- */
+/* From Uiverse.io by mi-series */
+.btn {
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #363839;
+  background: linear-gradient(30deg, #ff7300, #ffde55);
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  /* min-width: 200px; */
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  padding: 16px 20px;
+  color: #fff;
+  font-size: 1rem;
+  /* font-weight: 600; */
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0.6rem 2rem;
+}
+
+.btn:hover {
+  opacity: .95;
+}
+
+.btn .animation {
+  border-radius: 100%;
+  animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1),
+      0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1),
+      0 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1),
+      0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1),
+      0 0 0 80px rgba(255, 255, 255, 0);
+  }
+}
+
+/* -------------------------------------------------- */
+@media (max-width: 768px) {
+  .textmain {
+    font-size: 5rem;
+  }
+}
