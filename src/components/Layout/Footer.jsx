@@ -1,10 +1,64 @@
-import React from 'react'
-import './Footer.css'
+import React from "react";
+import "./Footer.css";
+import { TbPhoneCall } from "react-icons/tb";
+import { BiSolidEnvelope } from "react-icons/bi";
+import { IoLocation } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import { BiSolidPhone } from "react-icons/bi";
+import logo from '../../Assets/logo/footerlogo.svg'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <div className="footer-container">
+      <div className="logowrapper">
+        <img src={logo} alt="" />
+        {/* <h1>LOGO</h1> */}
+      </div>
+      <hr className="footerhr" />
+      <div className="footerDetailswrapper">
+        <div className="footerContact">
+          <h3>Reach Us</h3>
+          <div className="footerdetails">
+            <TbPhoneCall />
+            <span>+971-87654321</span>
+          </div>
+          <div className="footerdetails">
+            <BiSolidEnvelope />
+            <span>info@demo.com</span>
+          </div>
+          <div className="footerdetails">
+            <IoLocation />
+            <span>Dubai,UAE</span>
+          </div>
+        </div>
+        <div className="list">
+          <h3>Links</h3>
+          <Link>Home</Link>
+          <Link>About</Link>
+          <Link>Services</Link>
+          <Link>Contact us</Link>
+        </div>
 
-export default Footer
+        <div className="list">
+          <h3>Legal</h3>
+          <span>Privacy Policy</span>
+          <span>Terms & services</span>
+          <span>Terms of use</span>
+        </div>
+        <div className="list">
+          <h3>Working Hours</h3>
+          <span>
+            Lorem ipsum dolor sit amet,
+            <br /> consectetur adipiscing elit.
+          </span>
+          <button className="footerBtn">
+            <BiSolidPhone />
+            Call Us
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;

@@ -9,7 +9,7 @@
   width: 100%;
   min-height: 100vh;
   /* background-color: #363839f3; */
-  background: linear-gradient(to bottom, #363839f7, #13171bf7);
+  background: linear-gradient(to bottom, #363839ed, #13171bed);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +32,6 @@
 }
 
 /* -------------------------------------------------- */
-/* From Uiverse.io by mi-series */
 .btn {
   outline: 0;
   display: inline-flex;
@@ -131,7 +130,7 @@
   width: 20px;
   height: 20px;
   /* background-color: var(--orange); */
-  background: linear-gradient(to right,var(--orange),#ffde55);
+  background: linear-gradient(to right, var(--orange), #ffde55);
   border-radius: 50%;
   opacity: 0;
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);

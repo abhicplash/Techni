@@ -1,9 +1,28 @@
-.navbar-container {
+.navbar-wrapper {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  position: absolute;
+
+  /* border: 1px solid; */
+}
+.navbar-container {
+  width: 90%;
   height: 8vh;
   position: absolute;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  border: 2px solid var(--white);
+  /* background: linear-gradient(to bottom, #ff730017, #ffdd550c); */
+  /* border: 1px solid rgba(245, 222, 179, 0.375); */
+  /* box-shadow: 0.5px 0.5px 5px 0.5px #ff7300; */
+  border-radius: 50px;
+}
+.logoLink {
+  display: flex;
   align-items: center;
 }
 .listLargerScreen {
@@ -13,18 +32,21 @@
   list-style: none;
   text-transform: capitalize;
   justify-content: end;
-  /* border: 1px solid; */
   margin-right: 3rem;
 }
-.listLargerScreen li {
-  background: linear-gradient(30deg, #ff7300, #ffde55);
+.listLargerScreen li a{
+  color: var(--white);
+  font-weight: 600;
+}
+/* .listLargerScreen li {
+  background: linear-gradient(30deg, #eee9e5, #eae5d3);
   background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
-}
+} */
 .listLargerScreen li:hover {
-  background: linear-gradient(30deg, #ffde55, #ffde55);
+  background: linear-gradient(30deg, #ff7300, #ffde55);
   background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -52,7 +74,7 @@
   width: 100%;
   list-style: none;
   height: 90vh;
-  background: linear-gradient(to bottom, #3638394d, #13171b);
+  background: linear-gradient(to bottom, #363839f7, #13171b);
   display: flex;
   flex-direction: column;
   padding: 4rem 0;
@@ -60,6 +82,7 @@
   align-items: center;
   gap: 0.5rem;
   text-transform: capitalize;
+  z-index: 80;
 }
 
 .list li {
@@ -84,10 +107,22 @@
   font-size: 1.2rem;
   font-weight: 600;
 }
-
+.logoImg {
+  width: 2.5rem;
+  margin-left: 3rem;
+  position: relative;
+  z-index: 100;
+  /* border: 1px solid; */
+}
 @media (max-width: 768px) {
+  .navbar-wrapper {
+    height: 8vh;
+  }
   .navbar-container {
     justify-content: space-around;
+    width: 100%;
+    border-radius: 0;
+    border: none;
   }
   .navicon {
     display: flex;
@@ -96,7 +131,7 @@
     display: none;
     margin-right: 0;
   }
-  .trans {
+  .logoImg {
     margin-left: 0;
   }
 }
