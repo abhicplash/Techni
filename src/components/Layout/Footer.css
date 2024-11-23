@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center;
 }
-.logowrapper img{
+.logowrapper img {
   width: 10rem;
 }
 .footerhr {
@@ -50,13 +50,16 @@
 .footerBtn {
   padding: 0.5rem 1rem;
   font-family: inherit;
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 1.1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 8rem;
-  font-weight: 600;
-  gap: 5px;
-  font-size: 1rem;
+  width: 10rem;
+  gap: 7px;
 }
 @media (max-width: 768px) {
   .footerDetailswrapper {

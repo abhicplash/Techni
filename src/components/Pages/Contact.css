@@ -89,11 +89,10 @@
   padding: 0.5rem 1rem;
   font-family: inherit;
   background-color: var(--orange);
-  border: 1ps solid var(--orange);
+  border: 1px solid var(--orange);
   font-weight: 600;
   text-transform: capitalize;
   font-size: 1rem;
-  /* background: linear-gradient(to right, var(--orange), var(--yellow)); */
 }
 .contactLinks {
   padding: 3rem 0;
