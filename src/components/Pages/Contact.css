@@ -88,8 +88,8 @@
 .contactForm button {
   padding: 0.5rem 1rem;
   font-family: inherit;
-  background-color: var(--yellow);
-  border: 1ps solid var(--yellow);
+  background-color: var(--orange);
+  border: 1ps solid var(--orange);
   font-weight: 600;
   text-transform: capitalize;
   font-size: 1rem;
@@ -109,7 +109,7 @@
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
-  background-color: var(--yellow);
+  background-color: var(--orange);
   font-size: 1.3rem;
   color: var(--gray);
 }
