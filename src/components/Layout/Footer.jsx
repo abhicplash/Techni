@@ -4,16 +4,15 @@ import { TbPhoneCall } from "react-icons/tb";
 import { BiSolidEnvelope } from "react-icons/bi";
 import { IoLocation } from "react-icons/io5";
 import { Link } from "react-router-dom";
-// import { BiSolidPhone } from "react-icons/bi";
 import { ImPhone } from "react-icons/im";
-import logo from '../../Assets/logo/footerlogo.svg'
+import logo from '../../Assets/logo/5footerlogo.svg'
 
 const Footer = () => {
   return (
     <div className="footer-container">
       <div className="logowrapper">
         <img src={logo} alt="" />
-        {/* <h1>LOGO</h1> */}
+        {/* <h1>LOGO</h1> */} 
       </div>
       <hr className="footerhr" />
       <div className="footerDetailswrapper">
@@ -53,7 +52,7 @@ const Footer = () => {
             <br /> consectetur adipiscing elit.
           </span>
           <button className="footerBtn">
-            <ImPhone  />
+            <ImPhone />
             Call Us
           </button>
         </div>

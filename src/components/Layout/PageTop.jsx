@@ -1,10 +1,13 @@
 import React from "react";
 import "./PageTop.css";
 
-const PageTop = ({title}) => {
+const PageTop = ({ title }) => {
   return (
     <div className="PageTop-container">
-      <h1>{title}</h1>
+      <div className="titlewrapper">
+        <span className="title">{title}</span>
+      </div>
+      {/* <span className="para">{para}</span> */}
     </div>
   );
 };
