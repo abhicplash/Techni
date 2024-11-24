@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   /* background-color: var(--black); */
-  /* border-top: 0.1px solid var(--orange); */
+  border-top: 0.1px solid var(--orange);
   padding: 2rem 0;
 }
 .logowrapper {
@@ -16,7 +16,7 @@
   align-items: center;
 }
 .logowrapper img {
-  width: 10rem;
+  width: 15rem;
 }
 .footerhr {
   width: 90%;

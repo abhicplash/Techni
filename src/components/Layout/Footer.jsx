@@ -5,7 +5,7 @@ import { BiSolidEnvelope } from "react-icons/bi";
 import { IoLocation } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { ImPhone } from "react-icons/im";
-import logo from '../../Assets/logo/5footerlogo.svg'
+import logo from '../../Assets/logo/footerlogo.png'
 
 const Footer = () => {
   return (
