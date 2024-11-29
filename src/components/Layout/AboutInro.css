@@ -3,6 +3,7 @@
 }
 .AboutInroContainer {
   width: 100%;
+  /* border: 1px solid; */
   /* min-height: 80vh; */
   color: var(--white);
   text-align: justify;
