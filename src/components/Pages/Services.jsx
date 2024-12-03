@@ -4,6 +4,7 @@ import PageTop from "../Layout/PageTop";
 import "./Services.css";
 import ServiceCard from "../Layout/ServiceCard";
 import { servicesList } from "../../utils/serviceList";
+import HomeContact from "../Layout/HomeContact";
 
 const Services = () => {
   return (
@@ -25,6 +26,7 @@ const Services = () => {
           />
         ))}
       </div>
+      <HomeContact/>
     </Layout>
   );
 };
