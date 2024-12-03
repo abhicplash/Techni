@@ -51,6 +51,7 @@ const Footer = () => {
             Lorem ipsum dolor sit amet,
             <br /> consectetur adipiscing elit.
           </span>
+          
           <button className="footerBtn">
             <ImPhone />
             Call Us

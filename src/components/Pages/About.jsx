@@ -4,6 +4,7 @@ import PageTop from "../Layout/PageTop";
 import AboutInro from "../Layout/AboutInro";
 import AboutOurValues from "../Layout/AboutOurValues";
 import AboutGoals from "../Layout/AboutGoals";
+import HomeContact from "../Layout/HomeContact";
 
 const About = () => {
   return (
@@ -11,7 +12,8 @@ const About = () => {
       <PageTop title={"About us"} />
       <AboutInro />
       <AboutOurValues />
-      <AboutGoals/>
+      <AboutGoals />
+      <HomeContact />
     </Layout>
   );
 };

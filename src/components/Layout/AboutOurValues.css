@@ -60,10 +60,12 @@
 .vCard {
   width: 16rem;
   height: 17rem;
-  background: linear-gradient(to bottom right, black, var(--gray));
+  background: linear-gradient(to right, black, var(--gray));
+
+  /* background: linear-gradient(to bottom right, black, var(--gray)); */
 
   /* background-color: black; */
-  border: 1px solid var(--orange);
+  border: 1px solid var(--black);
   display: flex;
   flex-direction: column;
   justify-content: center;
