@@ -53,11 +53,14 @@
   .visionCard {
     flex-direction: column;
     width: 14rem;
-    height: 80vh;
+    height: 100%;
+    padding:2rem 1rem;
+    /* padding: 2rem 0;  */
+    /* height: 80vh; */
     /* justify-content: space-between; */
     /* justify-content: center; */
     text-align: center;
-    padding-bottom: 2rem;
+    /* padding-bottom: 1rem; */
   }
 
   .visionImg {
