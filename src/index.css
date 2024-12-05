@@ -17,6 +17,15 @@ body {
   --yellow: #ffde55;
   --gray: #262627;
 }
+.homeworksubHead {
+  text-transform: capitalize;
+  color: var(--orange);
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

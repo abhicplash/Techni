@@ -26,7 +26,7 @@ const Services = () => {
           />
         ))}
       </div>
-      <HomeContact/>
+      <HomeContact />
     </Layout>
   );
 };
