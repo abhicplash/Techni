@@ -5,14 +5,14 @@ import { BiSolidEnvelope } from "react-icons/bi";
 import { IoLocation } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { ImPhone } from "react-icons/im";
-import logo from '../../Assets/logo/footerlogo.png'
+import logo from "../../Assets/logo/footerlogo.png";
 
 const Footer = () => {
   return (
     <div className="footer-container">
       <div className="logowrapper">
         <img src={logo} alt="" />
-        {/* <h1>LOGO</h1> */} 
+        {/* <h1>LOGO</h1> */}
       </div>
       <hr className="footerhr" />
       <div className="footerDetailswrapper">
@@ -33,10 +33,10 @@ const Footer = () => {
         </div>
         <div className="list">
           <h3>Links</h3>
-          <Link>Home</Link>
-          <Link>About</Link>
-          <Link>Services</Link>
-          <Link>Contact us</Link>
+          <Link to={"/"}>Home</Link>
+          <Link to={"/about"}>About</Link>
+          <Link to={"/services"}>Services</Link>
+          <Link to={"/contact"}>Contact us</Link>
         </div>
 
         <div className="list">
@@ -51,11 +51,18 @@ const Footer = () => {
             Lorem ipsum dolor sit amet,
             <br /> consectetur adipiscing elit.
           </span>
-          
-          <button className="footerBtn">
+          <a
+            href="tel:+971542791548"
+            target="_blank"
+            title="Call"
+            rel="noreferrer"
+          >
+            <button class="button"> Call Us</button>
+          </a>
+          {/* <button className="footerBtn">
             <ImPhone />
             Call Us
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

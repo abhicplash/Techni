@@ -8,6 +8,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa";
+import SideIcons from "./SideIcons";
 
 const Navbar = () => {
   const [view, setView] = useState(false);
@@ -62,6 +63,7 @@ const Navbar = () => {
           }}
         />
       </div>
+      <SideIcons />
     </div>
   );
 };
