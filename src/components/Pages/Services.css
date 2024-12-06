@@ -33,3 +33,6 @@
   gap: 20px;
   padding: 5rem 0;
 }
+.serviceLists a {
+  color: var(--black);
+}

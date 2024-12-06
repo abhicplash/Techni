@@ -5,6 +5,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+  background: linear-gradient( to right,black,var(--gray));
   /* background: linear-gradient(to bottom, black, var(--gray)); */
 }
 .HomeContactPara {

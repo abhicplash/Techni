@@ -3,6 +3,11 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { HiBars3 } from "react-icons/hi2";
 import logo from "../../Assets/logo/logo.png";
+import footerLogo from "../../Assets/logo/footerlogo.png";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { RiTwitterXLine } from "react-icons/ri";
+import { FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   const [view, setView] = useState(false);
@@ -27,6 +32,13 @@ const Navbar = () => {
             <li>
               <Link to={"/contact"}>Contact us</Link>
             </li>
+            <img src={footerLogo} alt="technitrust" className="navLogo" />
+            <div className="navLinks">
+              <FaFacebookSquare className="navIcon" />
+              <FaInstagram className="navIcon" />
+              <RiTwitterXLine className="navIcon" />
+              <FaLinkedin className="navIcon" />
+            </div>
           </ul>
         ) : null}
         <ul className="listLargerScreen">

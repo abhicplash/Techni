@@ -1,6 +1,8 @@
 import { FaAward } from "react-icons/fa6";
 import { BiWorld } from "react-icons/bi";
 import { BsTools } from "react-icons/bs";
+import { ImHappy } from "react-icons/im";
+import { FaEnvira } from "react-icons/fa";
 
 export const GoalsList = [
   {
@@ -21,11 +23,11 @@ export const GoalsList = [
   {
     goals: "Ensure Customer Satisfaction",
     desc: "Build long-term relationships by providing personalized and timely services that prioritize client needs.",
-    icon: <FaAward />
+    icon: <ImHappy />
   },
   {
     goals: "Promote Sustainability",
     desc: "Adopt eco-friendly practices and energy-efficient solutions that benefit both clients and the environment.",
-    icon: <FaAward />
+    icon: <FaEnvira />
   }
 ];

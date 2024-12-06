@@ -5,6 +5,7 @@ import About from "./components/Pages/About";
 import Services from "./components/Pages/Services";
 import Contact from "./components/Pages/Contact";
 import PNF from "./components/Pages/PNF";
+import SingleServicePage from "./components/Pages/SingleServicePage";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/services" element={<Services />} />
           <Route exact path="/contact" element={<Contact />} />
+          <Route exact path="/services/:ServiceName" element={<SingleServicePage />} />
           <Route exact path="*" element={<PNF />} />
         </Routes>
       </BrowserRouter>

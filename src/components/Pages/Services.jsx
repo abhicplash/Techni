@@ -5,6 +5,7 @@ import "./Services.css";
 import ServiceCard from "../Layout/ServiceCard";
 import { servicesList } from "../../utils/serviceList";
 import HomeContact from "../Layout/HomeContact";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -19,11 +20,9 @@ const Services = () => {
       </div>
       <div className="serviceLists">
         {servicesList.map((list, index) => (
-          <ServiceCard
-            key={index}
-            serviceName={list.ServiceName}
-            image={list.Image}
-          />
+          <Link to={"/services/" + list.ServiceName} key={index}>
+            <ServiceCard serviceName={list.ServiceName} image={list.Image} />
+          </Link>
         ))}
       </div>
       <HomeContact />

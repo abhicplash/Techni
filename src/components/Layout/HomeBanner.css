@@ -2,14 +2,14 @@
   width: 100%;
   min-height: 100vh;
   background: url("../../Assets/Home/banner.jpg");
-  background-position: center;
+  /* background-position: center; */
   background-size: cover;
 }
 .bannerWrapper {
   width: 100%;
   min-height: 100vh;
   /* background-color: #363839f3; */
-  background: linear-gradient(to bottom, #363839ed, #13171bed);
+  /* background: linear-gradient(to bottom, #363839ed, #13171bed); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,5 +181,8 @@
 @media (max-width: 768px) {
   .textmain {
     font-size: 5rem;
+  }
+  .HomeBanner-container {
+    background-position: center;
   }
 }

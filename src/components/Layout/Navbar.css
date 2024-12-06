@@ -34,7 +34,7 @@
   justify-content: end;
   margin-right: 3rem;
 }
-.listLargerScreen li a{
+.listLargerScreen li a {
   color: var(--white);
   font-weight: 600;
 }
@@ -68,8 +68,8 @@
   display: none;
 }
 .navbar-container .list {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: -1rem;
   right: 0;
   width: 100%;
   list-style: none;
@@ -77,35 +77,48 @@
   background: linear-gradient(to bottom, #363839f7, #13171b);
   display: flex;
   flex-direction: column;
-  padding: 4rem 0;
-  /* justify-content: center; */
+  padding: 5rem 0;
+  /* justify-content: center;  */
   align-items: center;
   gap: 0.5rem;
   text-transform: capitalize;
   z-index: 80;
+  animation: riseabove 0.2s ease-in-out forwards;
+}
+@keyframes riseabove {
+  0% {
+    right: 100vw;
+  }
+  100% {
+    right: 0;
+  }
 }
 
 .list li {
   width: 90%;
-  background: linear-gradient(30deg, #ff7300, #ffde55);
-  background-clip: inherit;
+  /* background: linear-gradient(30deg, #ff7300, #ffde55); */
+  /* background-clip: inherit;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .list li a {
   text-decoration: none;
-  color: wheat;
   width: 100%;
-  height: 3rem;
+  height: 3.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid;
+  color: var(--white);
+  background: linear-gradient(to right, black, var(--gray), black);
+  /* border: 1px solid black; */
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 200;
+}
+.list li a:hover {
+  color: var(--orange);
 }
 .logoImg {
   width: 2.5rem;
@@ -114,9 +127,27 @@
   z-index: 100;
   /* border: 1px solid; */
 }
+.navLogo {
+  width: 90%;
+}
+.navLinks {
+  display: flex;
+  gap: 0.5rem;
+}
+.navLinks .navIcon {
+  /* width: 2.5rem;
+  height: 2.5rem; */
+  padding: 5px;
+  font-size: 2rem;
+  background: linear-gradient(to right bottom, black, var(--gray));
+  color: var(--orange);
+  border: 1px solid var(--gray);
+}
 @media (max-width: 768px) {
   .navbar-wrapper {
     height: 8vh;
+
+    /* background-color: red; */
   }
   .navbar-container {
     justify-content: space-around;
