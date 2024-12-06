@@ -22,5 +22,5 @@
 }
 .iconwrapper a:hover,
 .iconwrapper:hover {
-  background: linear-gradient(to bottom, #089089, #00a99d);
+  background: linear-gradient(to bottom, var(--gray), #000);
 }
